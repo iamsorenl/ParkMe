@@ -1,0 +1,9 @@
+Backend testing:
+Test spot availability:
+Testing based on given time, given time and 
+id input, and by getting all available spots.
+
+Login testing
+Testing If users can login, as well as 
+handling validation errors
+

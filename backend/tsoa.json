@@ -1,0 +1,24 @@
+{
+  "entryFile": "src/server.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/**/*Controller.ts"],
+  "spec": {
+    "outputDirectory": "build",
+    "specVersion": 3,
+    "securityDefinitions": {
+      "jwt": {
+        "type": "http",
+        "scheme": "bearer",
+        "scopes": {
+          "user": "user",
+          "admin": "admin"
+        }
+      }
+    }
+  },
+
+  "routes": {
+    "routesDir": "build",
+    "authenticationModule": "./src/auth/expressAuthentication.ts"
+  }
+}

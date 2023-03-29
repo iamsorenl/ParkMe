@@ -1,0 +1,26 @@
+{
+  "name": "parkme",
+  "version": "1.0.0",
+  "description": "the front and backend folders for the parkme app",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "(cd backend && npm install) & (cd frontend && flutter pub get)",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && flutter run -d ${device:-90D7B91D-F5F7-43D0-B0E9-46ECF9DE4D05}",
+    "dev": "(npm run backend) & (npm run frontend)",
+    "macOS": "device=macOS npm run frontend",
+    "chrome": "device=Chrome npm run frontend",
+    "docker-start": "cd backend && docker compose up -d",
+    "docker-stop": "cd backend && docker compose down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParkMeCSE115a/parkme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParkMeCSE115a/parkme/issues"
+  },
+  "homepage": "https://github.com/ParkMeCSE115a/parkme#readme"
+}

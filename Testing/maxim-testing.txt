@@ -1,0 +1,28 @@
+Test Steps:
+
+Test the POST request functionality:
+a. Navigate to the login page and input valid login credentials.
+b. Input a valid license plate number and perform a POST request to change the license plate.
+c. Verify that the new license plate is reflected in the user's account information.
+
+Test the GET request functionality:
+a. Navigate to the login page and input valid login credentials.
+b. Perform a GET request to get all available spots.
+c. Verify that the expected spots are displayed on the page.
+
+Test the startTime and endTime filter functionality:
+a. Navigate to the login page and input valid login credentials.
+b. Perform a GET request to get all available spots.
+c. Apply the startTime and endTime filters to the spots list.
+d. Verify that only spots available within the selected time frame are displayed on the page.
+
+Expected outcomes:
+
+The user's license plate is successfully updated after performing a POST request.
+All available spots are displayed after performing a GET request.
+Only spots available within the selected time frame are displayed after applying the startTime and endTime filters.
+Assumptions:
+
+The login page is accessible and functional.
+Valid login credentials are available for testing purposes.
+There are spots available for testing that can be filtered by startTime and endTime.

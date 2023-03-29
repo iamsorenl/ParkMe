@@ -1,0 +1,9 @@
+Backend testing:
+Test rental routes: check all get and post routes for 
+rental have expected outputs. Ex: Get by spot id or Post 
+given spot id, amount paid, and start/end time. 
+
+Frontend testing:
+Test google maps:
+searching and rendering pins
+based on distance filter and destination chosen.
